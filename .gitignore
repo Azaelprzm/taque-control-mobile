@@ -30,8 +30,15 @@ yarn-error.*
 .DS_Store
 *.pem
 
-# local env files
-.env*.local
+# local environment files and credentials
+.env*
+!.env.example
+
+# local builds and temporary files
+*.apk
+*.aab
+tmp/
+.codex-*
 
 # typescript
 *.tsbuildinfo
